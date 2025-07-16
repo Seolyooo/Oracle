@@ -82,4 +82,213 @@ INSERT INTO SALE (EMPNO, YEAR, MONTH, PRICE) VALUES (1004, 2024, 1,   NULL);
   
   
   
+  -- 실습하기 3-1 다양한 sql 숫자 함수 실습
+  select sum(price) as 합계 from sale;
+  select count(*) as  직원수 from emp;
+  select count(empno) as 직원수 from emp;
+  select count(depno) as 부서수 from emp;
   
+  
+  select ceil(1.2) from dual;
+  select floor(1.2) from dual;
+  
+  select round(1.2) from dual;
+  select round(1.8) from dual;
+  
+  select dbms_random.value from dual;
+  select ceil(dbms_random.value*10) from dual;
+  
+  
+  select sum(price) as 합계 from sale;
+ select avg (price) as 평균 from sale;
+  select max(price) as "최댓값" from sale;
+  
+  
+  -- 실습하기 3-2 다양한 sql 문자 함수 실습
+  
+  select 'hello oracle!',length('hello oracle!') from dual;
+  
+  select 
+    'hello oracle',
+    substr ('hello oracle',1,3),
+    substr ('hello oracle',3,5),
+    substr ('hello oracle',5)
+    from dual;
+    
+    
+    select instr( 'hello oracle', 'l') as instr_1,
+    instr ('hello oracle','l',-1) as instr_2
+    from dual;
+    
+    
+    select '010-1234-5678',replace('010-1234-5678','-','') from dual;
+    
+    select 
+    lpad('oracle',10,'#') as lpad,      //(패딩문자열, 전체길이 ,패딩문자)
+    rpad('oracle',10,'*') as rpad
+    from dual;
+    
+    
+    select concat(empno,name) from emp where name = '이순신';
+    select empno || name from emp where name = '정약용';
+    SELECT
+        '[ _Oracle_ ]' AS BEFORE,
+        '[' || TRIM(' _Oracle_ ') || ']' AS TRIM
+    FROM DUAL;
+    
+    //sysdate
+    select 
+        sysdate,
+        sysdate-1,
+        sysdate +1
+    from dual;
+    
+    
+    select 
+        add_months(sysdate,1),
+        add_months(sysdate,-1)
+    from dual;
+    
+    select 
+        months_between(date '2025-07-13' ,date '2024-07-13') as 개월차
+  from dual;
+
+select 
+    next_day (sysdate, '월요일') as 다음_월요일
+    from dual;
+    
+    
+    
+    
+    
+    
+    //실습하기 3-4
+    
+    select
+        TO_CHAR(SYSDATE, 'YYYY')  AS YYYY,
+        TO_CHAR(SYSDATE, 'MM')    AS MM,
+         TO_CHAR(SYSDATE, 'DD')    AS DD,
+         TO_CHAR(SYSDATE, 'HH24')  AS HH24,
+        TO_CHAR(SYSDATE, 'MI')    AS MI,
+        TO_CHAR(SYSDATE, 'SS')    AS SS,
+        TO_CHAR(SYSDATE, 'YYYY/MM/DD HH24:MI:SS') AS 날짜시간
+ from dual;
+ 
+ 
+ insert into emp 
+ values (1011,'안중근','m','부장',30,to_char(sysdate,'yyyy/mm/dd'));
+ 
+ 
+ select 
+   TO_DATE('20250714', 'YYYY/MM/DD') AS 날짜1,
+ TO_DATE('250714', 'YY-MM-DD') AS 날짜2,
+ TO_DATE(SYSDATE, 'YYYY/MM/DD HH24:MI:SS') AS 날짜시간
+ from dual;
+  INSERT INTO EMP VALUES (1014, '유관순', 'F', '차장', 20, SYSDATE);
+ 
+ select
+    no,
+    empno,
+    year,
+    month,
+    nvl(price,0)
+ from sale;
+ 
+ select empno, name, gender, job,nvl2(depno,'정규직','비정규직')
+ from emp;
+ 
+ 
+ --실습 4-1
+ select empno from sale group by empno;
+ select year from sale group by year;
+ select empno, year from sale group by empno,year; 
+ select empno,count(*) as 합계 from sale group by empno;
+select empno ,sum(price) as 합계 from sale group by empno;
+ select empno,year, sum(price) as 함계 
+     from sale
+     group by empno, year;
+ 
+ 
+ select  
+    empno,year, sum(price) as 합계 
+    from sale
+    where price >= 50000
+    group by empno, year
+    having sum(price) >= 200000
+    order by 합계 desc;
+    
+ SELECT EMPNO, YEAR, SUM(price) AS 합계
+FROM SALE
+ WHERE PRICE >= 50000
+ GROUP BY EMPNO, YEAR
+ ORDER BY 합계 DESC;
+ 
+select empno, avg(price) as 평균 from sale group by empno;
+ 
+ -- 실습 5-1
+ 
+ select empno, month, price from sale where year =2023
+ union
+  select empno, month, price from sale where year =2024;
+  
+ select empno, month, price from sale where year =2023
+ union all
+  select empno, month, price from sale where year =2024;
+ 
+ select empno ,month ,sum(price) as 합계
+  from sale
+  where  year = 2023
+  group by empno,year
+  UNION
+  SELECT EMPNO, YEAR, SUM(PRICE) AS 합계
+  from sale
+  where year = 2024
+  group by empno,year
+  order by year asc, 합계 desc;
+ 
+ 
+
+ -- 실습 5-2
+SELECT EMPNO FROM SALE WHERE YEAR = 2023
+intersect
+select empno from sale where year = 2024;
+ 
+ 
+ -- 실습 5-3
+SELECT EMPNO FROM SALE WHERE YEAR = 2023
+minus
+select empno from sale where year = 2024;
+ 
+ -- 실습 6-1
+select *from emp e
+join dept d
+on e.empno = d.deptno;
+ 
+ 
+ select * from emp e
+ join dept d
+ using (deptno); -- 조인하려는 두 테이블의 동일한 컬럼명
+ 
+ select * from emp e,dept d where e.depno = d.deptno;
+ 
+sELECT
+ S.NO,
+ S.EMPNO, 
+E.NAME, 
+E.JOB, 
+E.REGDATE,
+ E.DEPNO, 
+D.DNAME
+ FROM SALE S
+ JOIN EMP E ON S.EMPNO = E.EMPNO
+ JOIN DEPT D ON E.DEPNO = D.DEPTNO
+ WHERE PRICE > 100000 AND YEAR = 2024
+ ORDER BY S.PRICE DESC;
+ 
+ 
+ -- 실습 6-2
+ 
+ delete from emp where empno= 1006;
+ select * 
+    from sale s 
+    right join emp e on s.empno= e.empno;
