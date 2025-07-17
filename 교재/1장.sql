@@ -43,3 +43,36 @@ select ename, sal,sal *1.1 from emp where deptno= 10;
 --9. 다양한 연산자 활용하기
 select * from emp;
 select empno,ename,sal from emp  where sal between 2000 and 3000;
+select empno,ename,sal from emp where sal >=2000 and sal <=3000;
+
+select ename from emp order by ename;
+select ename from emp where ename between 'JAMES' and 'MART IN' order  by ename; 
+
+select empno , ename, deptno from emp where deptno in (10,20);
+
+select empno, ename, sal from emp where sal like '1%';
+select empno, ename, sal from emp where ename like 'A%';
+select empno, ename ,hiredate from emp where hiredate like '80%';
+select empno,ename , hiredate from emp where hiredate like '___12%';
+
+select empno,ename,comm from emp where deptno in(20,30);
+select empno,ename,comm from emp where comm is null;
+select empno,ename ,comm from emp where comm is not null;
+
+
+select ename,hiredate, sal from emp where hiredate >'82/01/01' or sal >= 1300;
+
+
+select empno, ename, sal 
+    from emp
+    where empno = &empno;
+    
+select empno ,ename ,sal from &table where sal = 3000;
+
+
+--10. 정렬하여 출력하기
+select ename,sal,hiredate from emp order by ename;
+
+select deptno,sal ,ename from emp order by deptno asc,sal desc;
+
+select ename,sal,hiredate from emp where sal >1000 order by 2,1;
