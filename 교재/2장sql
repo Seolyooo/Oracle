@@ -1,0 +1,36 @@
+-- 1. 문자함수
+--1-1 initcap()
+
+select ename,initcap(ename) "initcap"
+from emp
+where deptno = 10;
+
+
+--1-2/1-3
+select ename ,Lower(ename) "Lower", upper(ename) "upper" 
+from emp
+where deptno =10;
+
+--1-4
+select ename,length(ename) "length", lengthb(ename) "lenghtb"
+from emp;
+
+--1-5
+select concat(ename,job)
+from emp
+where deptno=10;
+
+--1.6
+col "3.2" for a6
+col "-3.2" for a6
+col "-3.4" for a6
+
+select substr('abcdeadjfhs',3,2)"3.2",
+substr('abcdesdkjfls',-5,5)"-3.2",
+substr('abcdejkdjfsl',3,4)"3.4"
+from dual;
+
+
+
+
+
