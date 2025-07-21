@@ -30,21 +30,20 @@ create index inx_user1_id on USER1(USER_ID);
 
 SELECT * FROM USER_IND_COLUMNS;
 
-DROP INDEX IDX_USER_ID;
+DROP INDEX inx_user1_id;
 SELECT * FROM USER_IND_COLUMNS;
-
 
 --실습하기 3-6
 
-CREATE VIEW VW_USER1 AS (SELECT NAME ,HP, AGE FROM USER2);
+CREATE VIEW VW_USER1 AS (SELECT NAME ,HP, AGE FROM USER1);
 create view vm_user2_age_under30 as(select * from user2 where age<30);
 
 
-select * from vm_user2;
+select * from VW_USER1;
 select * from vm_user2_age_under30;
 
 
-drop view vm_user2;
+drop view VW_USER1;
 drop view vm_user2_age_under30;
 
 -- 실습하기 3-9

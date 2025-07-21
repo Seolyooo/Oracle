@@ -72,9 +72,7 @@ INSERT INTO orders (ord_cid,ord_pno,ord_cnt,ord_date) VALUES ( 'c107', 6, 1, '20
 
 
 -- 실습 1-4
-
 select * from customer;
-
 -- 실습 1-5
 select cid,name,hp from customer;
 -- 실습 1-6
@@ -98,21 +96,21 @@ select pname,stock,price from product where company = '오리온';
 select * from orders;
 select ord_pno,ord_cnt,ord_date from orders where ord_cid = 'c102';
 -- 실습 1-13
-select ord_pno,ord_cnt,ord_date from orders where ord_cid='c102' and ord_pno >=2;
+select ord_pno,ord_cnt,ord_date from orders where ord_cid='c102' and ord_cnt >=2;
 -- 실습 1-14
 select * from product where price between 1000 and 2000;
 -- 실습 1-15
 select cid,name,hp,address from customer where name like '김%';
 -- 실습 1-16
-select cid, name,hp ,address from customer where name like  '__';
+select cid, name,hp ,address from customer where name like '__';
 -- 실습 1-17
-select *from customer where hp is null;
+select * from customer where hp is null;
 -- 실습 1-18
 select * from customer where address is not null;
 -- 실습 1-19
 select * from customer order by rdate desc;
 -- 실습 1-20
-select *from orders where ord_cnt >=3;
+select *from orders where ord_cnt >=3 order by ord_cnt desc, ord_pno asc;
 -- 실습 1-21
 select avg(price) from product;
 -- 실습 1-22
@@ -136,9 +134,9 @@ select company as 제조업체 ,count(*) as 제품수 , max(price) as 최고가
     group by company order by company;
 -- 실습 1-27
 SELECT company AS 제조업체, COUNT(*) AS 제품수, MAX(price) AS 최고가  
-FROM product  
-GROUP BY company  
-HAVING COUNT(company) >= 2;
+    FROM product  
+    GROUP BY company  
+    HAVING COUNT(company) >= 2;
 
 -- 실습 1-28
 select ord_pno,ord_cid,sum(ord_cnt) as "총주문 수량" from orders
@@ -146,11 +144,17 @@ select ord_pno,ord_cid,sum(ord_cnt) as "총주문 수량" from orders
 
 -- 실습 1-29
 select ord_cid,pname from orders a
-    JOIN Customer b on a.ORD_CID = b.cid
-    JOIN Product c on a.ORD_PNO = c.pno 
-    where ord_cid = 'c102';
+    JOIN Product c 
+    on a.ORD_PNO = c.pno 
+    where ord_cid = 'c102' order by pname desc;
+    
 -- 실습 1-30
 select ord_cid ,name,pname,ord_date from orders a
     JOIN Customer b on a.ORD_CID = b.cid
     JOIN Product c on a.ORD_PNO = c.pno
     WHERE TO_CHAR(ord_date, 'MM-DD') = '07-03';
+    
+    select ord_cid ,name,pname,ord_date from orders a
+    JOIN Customer b on a.ORD_CID = b.cid
+    JOIN Product c on a.ORD_PNO = c.pno
+    WHERE ord_date like '2022-07-03%';
