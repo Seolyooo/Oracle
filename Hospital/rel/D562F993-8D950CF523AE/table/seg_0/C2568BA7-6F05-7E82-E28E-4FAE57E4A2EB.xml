@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C2568BA7-6F05-7E82-E28E-4FAE57E4A2EB" name="orderItem">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:50:55 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cusId" id="5D165F77-896D-BA62-6B23-14E85AE8775B">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:52:32 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cName" id="5CCB0C05-BF6F-66E0-9A2D-0B828A2C5A32">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:52:32 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="7018D6AD-98AC-C38C-E334-1107A5F5D3C8">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:52:32 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ED8BC0B6-6E3A-3E86-748B-4B3A4A424754" name="orderItem_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:52:32 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D165F77-896D-BA62-6B23-14E85AE8775B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

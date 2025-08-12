@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="10269C6E-D415-6942-7406-673D537DD459" name="treatment">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:32:43 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="treat_no" id="17C49AF8-9AB5-BEEF-2EF6-EDE803F8D8A2">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:34:51 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="doc_id" id="E051726F-98D2-D429-A7FF-A4CA8DDF6BD5">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 03:01:27 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF70486D-4C72-FC34-53E2-1EFEDD446896" referredColumn="FD4D57DB-35C1-200D-A6C9-4FB5AE9FC545"/>
+</associations>
+</Column>
+<Column name="pat_id" id="66AC3E7B-BE63-CB14-7EB9-80C3EAFE3C39">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 03:01:15 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="787428EB-A679-49C9-BC4D-743308844E22" referredColumn="86BAE31C-23C2-1077-F793-DE7E116C89F8"/>
+</associations>
+</Column>
+<Column name="treat_desc" id="7DE89C17-5A51-AD1C-6F36-E10B534BD445">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:34:51 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="treat_datetime" id="904F48DC-2EE9-49A2-DF22-67AED33C8A91">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:36:46 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3923D249-6293-0992-AC3C-F67A3644B125" name="treatment_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:34:51 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17C49AF8-9AB5-BEEF-2EF6-EDE803F8D8A2"/>
+<colUsage columnID="66AC3E7B-BE63-CB14-7EB9-80C3EAFE3C39"/>
+<colUsage columnID="E051726F-98D2-D429-A7FF-A4CA8DDF6BD5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E5018A4-7073-BE58-48CE-F8ECC79158D0" name="treatment_patient_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 03:01:15 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66AC3E7B-BE63-CB14-7EB9-80C3EAFE3C39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E028C5C6-E02B-FA26-F615-0D1E0F587961" name="treatment_Doctor_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 03:01:27 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E051726F-98D2-D429-A7FF-A4CA8DDF6BD5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

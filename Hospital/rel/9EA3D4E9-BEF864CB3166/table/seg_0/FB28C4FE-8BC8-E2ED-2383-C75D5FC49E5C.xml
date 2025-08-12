@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FB28C4FE-8BC8-E2ED-2383-C75D5FC49E5C" name="Nurse">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:16:39 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nur_id" id="82E3FA2E-B4B4-EBE9-FC06-C89D6AF04907">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:40:03 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nur_name" id="FB84E018-1AF4-29B9-00D7-351EA2C02843">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:40:03 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nur_birth" id="BDD4995B-8B33-9BAA-39F2-1A40AE1C73F6">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:40:03 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nur_gender" id="932E7690-39B4-E552-532F-B6BE62E20240">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:40:03 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dep_no" id="8C3E09B9-ECBC-D9B5-C094-769C518B75DE">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:54:59 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6FFEB945-3FAE-E8F6-1E7A-5DC21863B116" referredColumn="6D1AA152-187A-5B0D-268E-6BD54739B8AA"/>
+</associations>
+</Column>
+<Column name="nur_pos" id="DBF69A11-91D9-5BF3-8300-CBB29134FC5F">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:40:03 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nur_phone" id="570A73E7-49A8-4331-80F0-5EEDBEED3144">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:40:03 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nur_email" id="5CC32223-6512-7F7B-BDB0-49302F1C0E63">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:40:03 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8F715250-8C4B-466F-D73F-990A3A4D6346" name="Nurse_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:40:03 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82E3FA2E-B4B4-EBE9-FC06-C89D6AF04907"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CBD75C23-34F2-04DE-356D-FBBB982A9414" name="Nurse__UN">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:40:21 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="570A73E7-49A8-4331-80F0-5EEDBEED3144"/>
+<colUsage columnID="5CC32223-6512-7F7B-BDB0-49302F1C0E63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6CA0A2C3-2E50-C119-B9FC-CD6007626C1B" name="Nurse_Department_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:54:59 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C3E09B9-ECBC-D9B5-C094-769C518B75DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

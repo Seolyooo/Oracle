@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B60B4E29-8F3E-D254-7A92-DC78E2854FB8" name="order">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:49:10 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="orderNo" id="AF6CEB6F-83E2-92AF-DBA4-E040B4057759">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:50:39 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="orderId" id="C3DEB860-E3FD-CF46-56A6-5923DF97CB71">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:50:39 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="orderDate" id="9DB2D4A5-E1C2-52E1-D836-7DC9A1A6FFFE">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:50:39 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="036EC6F9-4100-DF28-03B8-D03D8B80F9AE" name="order_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:50:39 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF6CEB6F-83E2-92AF-DBA4-E040B4057759"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

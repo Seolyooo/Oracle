@@ -76,3 +76,35 @@ select ename,sal,hiredate from emp order by ename;
 select deptno,sal ,ename from emp order by deptno asc,sal desc;
 
 select ename,sal,hiredate from emp where sal >1000 order by 2,1;
+-- 11. 집합연산자
+
+select studno ,name ,deptno1 ,1 
+    from student 
+    where deptno1 = 101
+    union all
+    select profno, name, deptno,2
+    from professor
+    where deptno= 101;
+    
+select studno, name 
+from student
+where deptno1 =101
+union 
+select studno ,name 
+from student
+where deptno2= 201;
+
+select studno, name
+from student 
+where deptno1=101
+intersect
+select studno, name
+from student
+where deptno2 = 201;
+
+select empno, ename, sal 
+from emp
+minus
+select empno,ename,sal
+from emp
+where sal>2500;

@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9A4C8E14-3327-3DBE-6C2C-E6894F0A6882" name="bo_book">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:48:17 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="bookId" id="97B0C18C-8C54-3010-E33E-81F662FAE3A2">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:48:35 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bookname" id="0E06DE70-008F-49A6-CE2F-53D34CB2D4F1">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:48:35 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="price" id="1E2FDCD4-1304-79CE-2C89-2A653BC15741">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:06:47 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AF6C0D85-FE6A-7FE5-4E30-FB78A5C614D2" name="book_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:49:00 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97B0C18C-8C54-3010-E33E-81F662FAE3A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

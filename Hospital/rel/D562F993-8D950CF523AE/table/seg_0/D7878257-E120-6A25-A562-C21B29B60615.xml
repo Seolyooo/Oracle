@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D7878257-E120-6A25-A562-C21B29B60615" name="bookorder">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:52:41 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="orderNo" id="209A5BC2-101F-D12A-48D4-51F67DDC903A">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:55:03 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="orderDate" id="B3E11D73-C766-92F8-7F07-D3B8F556C216">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:55:03 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cusId" id="8C12584D-6B49-53A1-4423-A5EE1E60FA61">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:55:03 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cName" id="E16EC06C-2D2D-525C-BD16-577B7DF083B0">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:55:03 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="DF751C3E-45EB-C325-5F07-1AD0DD23D62E">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:55:03 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bookId" id="5D65F946-A2E2-8C6F-FA1D-A546470B58DC">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:55:03 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bookName" id="605CA79F-EBC6-54E9-84D9-E3A3AA5F2960">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:55:03 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="count" id="B315A9D6-8412-D2C2-34D1-ADE5DFBBFA3E">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:55:03 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="price" id="01F9DAC4-C119-0D40-2106-D162E4B43020">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:55:03 UTC</createdTime>
+<ownerDesignName>Hospital</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

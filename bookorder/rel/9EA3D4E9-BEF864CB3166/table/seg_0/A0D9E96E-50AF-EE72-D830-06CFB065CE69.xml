@@ -1,0 +1,179 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A0D9E96E-50AF-EE72-D830-06CFB065CE69" name="patient">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:23:01 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pat_id" id="86BAE31C-23C2-1077-F793-DE7E116C89F8">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:45:04 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="doc_id" id="0F1C876E-6EC0-FEEF-F784-AA9B13B8B92E">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:59:16 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="34865F43-7645-B2C6-73C9-4E43294FC972" referredColumn="FD4D57DB-35C1-200D-A6C9-4FB5AE9FC545"/>
+</associations>
+</Column>
+<Column name="nur_id" id="31144E9F-6FEA-5BE5-2667-404C15FC6092">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:59:51 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FB8E2D37-1EB9-08D3-B38F-A332BBCA16C5" referredColumn="82E3FA2E-B4B4-EBE9-FC06-C89D6AF04907"/>
+</associations>
+</Column>
+<Column name="pat_name" id="8D51A12A-174D-450B-B29C-BB9AC3D6F11D">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:45:04 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pat_jumin" id="3C880810-388D-E755-EE80-2D7DEF9427DF">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:45:04 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pat_gen" id="E56EF3FB-9F2A-3DB0-62DB-C2D6344ADBD9">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:45:04 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pat_addr" id="9FADC043-49DB-F7A9-3540-EB6DC2D8B7D8">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:45:04 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pat_phone" id="97A11653-E88D-06C8-1660-7C669D942560">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:45:04 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pat_email" id="2518D098-670B-1AF9-E8A0-AFF53CBF32A6">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:45:04 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pat_job" id="6ADBC395-0BBC-FC98-1EC4-F456F3C5BFDF">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:45:04 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E957902B-F34A-C376-6959-8F4A99BCB334" name="patient_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:45:04 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86BAE31C-23C2-1077-F793-DE7E116C89F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA3FDBA8-F7C3-FEDF-01BF-7EC1DB1BA2AD" name="patient__UN">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:45:35 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C880810-388D-E755-EE80-2D7DEF9427DF"/>
+<colUsage columnID="97A11653-E88D-06C8-1660-7C669D942560"/>
+<colUsage columnID="2518D098-670B-1AF9-E8A0-AFF53CBF32A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4A97EB2F-7213-A434-02F4-DB054B890E60" name="patient_Doctor_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:59:16 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F1C876E-6EC0-FEEF-F784-AA9B13B8B92E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D57BB652-C8C3-AB3B-2F05-68306C2F9916" name="patient_Nurse_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 02:59:51 UTC</createdTime>
+<ownerDesignName>bookorder</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31144E9F-6FEA-5BE5-2667-404C15FC6092"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
